@@ -1,0 +1,21 @@
+[1mdiff --git a/src/Solutions.Security/Roles/Warehouse worker.xml b/src/Solutions.Security/Roles/Warehouse worker.xml[m
+[1mindex ee8bb20..4db4c69 100644[m
+[1m--- a/src/Solutions.Security/Roles/Warehouse worker.xml[m	
+[1m+++ b/src/Solutions.Security/Roles/Warehouse worker.xml[m	
+[36m@@ -9,10 +9,15 @@[m
+     <RolePrivilege name="prvAppendTolab_warehouselocation" level="Global" />[m
+     <RolePrivilege name="prvCreatelab_warehouseitem" level="Global" />[m
+     <RolePrivilege name="prvCreatelab_warehousetransaction" level="Basic" />[m
+[32m+[m[32m    <RolePrivilege name="prvCreateSharePointData" level="Global" />[m
+[32m+[m[32m    <RolePrivilege name="prvDeletelab_warehousetransaction" level="Basic" />[m
+     <RolePrivilege name="prvReadlab_warehouseitem" level="Global" />[m
+     <RolePrivilege name="prvReadlab_warehouselocation" level="Global" />[m
+     <RolePrivilege name="prvReadlab_warehousetransaction" level="Global" />[m
+[32m+[m[32m    <RolePrivilege name="prvReadSharePointData" level="Global" />[m
+[32m+[m[32m    <RolePrivilege name="prvReadSharePointDocument" level="Global" />[m
+     <RolePrivilege name="prvWritelab_warehouseitem" level="Global" />[m
+     <RolePrivilege name="prvWritelab_warehousetransaction" level="Basic" />[m
+[32m+[m[32m    <RolePrivilege name="prvWriteSharePointData" level="Global" />[m
+   </RolePrivileges>[m
+ </Role>[m
+\ No newline at end of file[m
