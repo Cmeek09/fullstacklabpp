@@ -2,27 +2,27 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Lab status",
+			"label": "Checkpoint 2 repository layout",
 			"type": "shell",
 			"command": "pwsh",
 			"args": [
 				"-NoProfile",
-				"-File",
-				".lab-scripts/lab-status.ps1"
+				"-Command",
+				"$null | & '.lab-scripts/CP02-create-repository-layout.ps1'"
 			],
-			"isBackground": false,
+			"isBackground": true,
 			"problemMatcher": []
 		},
 		{
-			"label": "Checkpoint 1 setup",
+			"label": "Run CP02",
 			"type": "shell",
 			"command": "pwsh",
 			"args": [
 				"-NoProfile",
-				"-File",
-				".lab-scripts/CP01-check-machine-setup.ps1"
+				"-Command",
+				"$null | & ./.lab-scripts/CP02-create-repository-layout.ps1"
 			],
-			"isBackground": false,
+			"isBackground": true,
 			"problemMatcher": []
 		}
 	]
