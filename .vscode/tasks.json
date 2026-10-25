@@ -48,6 +48,84 @@
 			],
 			"isBackground": true,
 			"problemMatcher": []
+		},
+		{
+			"label": "Verify CP03 status",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-File",
+				".lab-scripts/lab-status.ps1"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run CP04",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"$null | & ./.lab-scripts/CP04-setup-runtime.ps1"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Test environment",
+			"type": "shell",
+			"command": "txc",
+			"args": [
+				"env",
+				"list",
+				"--filter",
+				"wm-test-8260",
+				"--format",
+				"json"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Create Test environment only",
+			"type": "shell",
+			"command": "txc",
+			"args": [
+				"env",
+				"create",
+				"--type",
+				"Developer",
+				"--name",
+				"Warehouse test 8260",
+				"--domain",
+				"wm-test-8260",
+				"--region",
+				"unitedstates",
+				"--currency",
+				"USD",
+				"--language",
+				"1033",
+				"--wait"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Test environment result",
+			"type": "shell",
+			"command": "txc",
+			"args": [
+				"env",
+				"list",
+				"--filter",
+				"wm-test-8260",
+				"--format",
+				"json"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }

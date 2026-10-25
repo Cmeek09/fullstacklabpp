@@ -6,5 +6,13 @@
   "publisherPrefix": "lab",
   "repo": "Cmeek09/fullstacklabpp",
   "mainRulesetId": 25828861,
-  "mainRulesetName": "lab-main-protection"
+  "mainRulesetName": "lab-main-protection",
+  "devEnvUrl": "https://wm-dev-8260.crm.dynamics.com",
+  "testEnvUrl": "https://wm-test-8260.crm.dynamics.com",
+  "devEnvId": "395491e5-b47d-e50f-870f-b856a36acb0e",
+  "devOrgId": "f8c72b89-98d0-f111-a04e-6045bd003120",
+  "devProfile": "dev",
+  "testEnvId": "d26c3af1-56e2-e5a8-b231-51b306a16d00",
+  "testOrgId": "dd76a494-9ad0-f111-a04e-6045bd00312e",
+  "testProfile": "test"
 }
