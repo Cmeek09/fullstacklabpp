@@ -1,13 +1,11 @@
 {
   "version": "1.0",
-  "appId": "dd64f329-26bb-44e4-a5a3-58bd2e12b6df",
+  "appId": "4fc91e6e-3f21-4736-a509-9c9ead43e197",
   "appDisplayName": "Warehouse Picking",
   "region": "prod",
-  "environmentId": null,
   "description": "",
   "buildPath": "./dist",
   "buildEntryPoint": "index.html",
-  "localAppUrl": "http://localhost:3000",
   "logoPath": "Default",
   "connectionReferences": {
     "987ba058-3a88-4dbe-9808-494718cf2fdd": {
@@ -41,5 +39,7 @@
       },
       "environmentVariableName": ""
     }
-  }
+  },
+  "environmentId": "395491e5-b47d-e50f-870f-b856a36acb0e",
+  "localAppUrl": "https://repulsive-owl-5rwq76j97xjf4r9q-5173.app.github.dev/"
 }
