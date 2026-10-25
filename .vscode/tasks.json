@@ -24,6 +24,30 @@
 			],
 			"isBackground": true,
 			"problemMatcher": []
+		},
+		{
+			"label": "Verify CP02 status",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-File",
+				".lab-scripts/lab-status.ps1"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run CP03",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"$null | & ./.lab-scripts/CP03-setup-continuous-integration.ps1"
+			],
+			"isBackground": true,
+			"problemMatcher": []
 		}
 	]
 }
