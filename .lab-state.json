@@ -43,5 +43,6 @@
   "barcodeScanUiScaffolded": true,
   "configDataDirectory": "/workspaces/fullstacklabpp/src/Packages.Main/Data",
   "configDataSchemaPath": "/workspaces/fullstacklabpp/src/Packages.Main/Data/data_schema.xml",
-  "configDataFilePath": "/workspaces/fullstacklabpp/src/Packages.Main/Data/data.xml"
+  "configDataFilePath": "/workspaces/fullstacklabpp/src/Packages.Main/Data/data.xml",
+  "testsUiScaffolded": true
 }

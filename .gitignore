@@ -23,3 +23,5 @@ Thumbs.db
 
 # playwright-cli (browser automation) scratch files
 .playwright-cli/
+
+/src/Tests.UI/auth-state.json
